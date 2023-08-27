@@ -1,4 +1,5 @@
- interface userActivity {
+// Base pattern for custom user activities.
+interface userActivity {
     name : string,
     type : typeOfActivity,
     description : string,
@@ -12,6 +13,8 @@
     reviews : Number
  }
 
+
+// Example
  const myActivity : userActivity = {
     name : "Play Chess",
     type : "Recreational",
@@ -26,6 +29,6 @@
     reviews : 5
  }
 
-
+// redefinition of the activity's type. 
 type typeOfActivity = "Education" | "Recreational" | "Social" | "DIY" | "Charity" | "Cooking" | "Relaxation" | "Music" | "Busy / Work" ;
 

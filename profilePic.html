@@ -1,0 +1,19 @@
+// a simple algorithm used to update profile pictures in a site.
+
+
+<div>
+    <img src="external/defaultImage.jpg" id="profile-pic">
+    <label for="input-file"></label>
+    <input type="file" accept="image/jpg, image/jpeg, image/png">
+</div>
+
+let profilePic = document.getElementById"("profile-pic");
+
+let inputFile = document.getElementById"("input-file);
+
+inputFile.onChange = function () {
+    profilePic.src = URL.createObjectURL(inputFile.files[0]);
+}
+
+
+
